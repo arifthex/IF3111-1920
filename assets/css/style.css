@@ -1,0 +1,19 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper{
+	padding: 1em;
+	background-color: black;
+	color: white;
+}
+
+footer{
+	background-color: #910C3E;
+	color:#fff;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	padding: 0.2em;
+}
