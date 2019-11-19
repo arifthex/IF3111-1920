@@ -100,7 +100,7 @@ Webisite ini menggunakan Framework CodeIgniter 3.1.11 dan menggunakan database M
 
 1. Instalasi Website
    - Download terlebih dahulu repository ini melalui branch master
-   - import data.sql ke database anda
+   - import db_lapor.sql ke database anda
    - 
 2. Validasi Inputan
    - 
