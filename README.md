@@ -101,13 +101,13 @@ Webisite ini menggunakan Framework CodeIgniter 3.1.11 dan menggunakan database M
 1. Instalasi Website
    - Download terlebih dahulu repository ini melalui branch master
    - import db_lapor.sql ke database anda
-   - 
-2. Validasi Inputan
-   - 
    -
-3. Petunjuk penggunaan
-   -
-   -
+2. Validasi Inputan 
+	Hal ini akan menejelaskan inputan seperti apa yang di terima oleh sistem
+	- Sistem menerima minimal 20 kata pada isi laporan/komentar
+	-
+3. Petunjuk Penggunaan
+	-
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
