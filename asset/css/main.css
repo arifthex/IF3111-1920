@@ -1,0 +1,56 @@
+*{
+	margin : 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+#container{
+	padding: 1em;
+}
+
+header{
+	background-color: #C21111;
+	height: 1.5em;
+	text-align:right;
+	padding: 0.5em 2em;
+}
+header a{
+	color:#f4f4f4;
+}
+#head{
+	margin: 1.2em 0em 3em;
+	text-align: center;
+	font-family: sans-serif;
+}
+#badan {
+	text-align: center;
+	line-height: 2.5em;
+}
+#badan a{
+	color: #6A0606;
+}
+#badan input{
+	border: 1px solid grey;
+	padding: 0.5em;
+	background-color:white;
+	transition: 0.3s all ease-out;
+}
+#badan input:hover{
+    box-shadow: 0px 5px 8px 0px;
+    color: #562121;
+    transition: 0.3s all ease-out;
+    background:#EEEEEE;
+}
+#badan input[type=submit]{
+    cursor: pointer;
+}
+#konten{
+	padding: 2.5em 8.6em 2em;
+}
+footer{
+	background-color: #C21111;
+	color:#E2E1E1;
+	line-height:2.4em;
+	text-align:center;
+}
