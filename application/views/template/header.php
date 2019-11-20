@@ -15,8 +15,5 @@
   <!-- -->
 
 </head>
-
 <body>
-  <div id="wrapper">
-  <h1><?= $title; ?></h1>
-  <br>
+  
