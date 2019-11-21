@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>SIMPLE LAPOR!</title>
+  <title><?= $title; ?></title>
 
   <!-- Pengabilan file dari folder assets External dari CI-->
   <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>asset/css/main.css">
@@ -17,4 +17,8 @@
 </head>
 <body>
 	<header><a href="<?= base_url(); ?>">Layanan informasi</a></header>
+  <div id="container">
+  <div id="head">
+     <h1>SIMPLE LAPOR!</h1>
+  </div>
   

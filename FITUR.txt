@@ -6,6 +6,7 @@ Spesifikasi WEB SIMPLE LAPOR
 	- Pada Home, daftar Judul, Siapa yang bertanya, Isi pertanyaan singkat dan datetime terlihat
 	- Pada HOME, terlihat dapat mengedit maupun menghapus laporan
 	- HOME,ISI,DETAIL
+	- Aspek yang dilaporkan (Dosen, Staff, Mahasiswa, Infrastruktur dan Pengajaran )
 
 	FUNGSIONAL
 	- Dapat membuat laporan baru

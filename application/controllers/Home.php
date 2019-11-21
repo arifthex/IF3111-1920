@@ -12,8 +12,16 @@ class Home extends CI_Controller {
 		$data['title']='SIMPLE LAPOR!';
 		$data['laporan'] = $this->Lapor_model->getLaporan();
 
-		$this->load->view('templates/header');
+		$this->load->view('templates/header',$data);
 		$this->load->view('home/index', $data);
-		//$this->load->view('templates/footer'); //hdupkan untuk memanggil template footer
+		$this->load->view('templates/footer');  
+	}
+	public function form() {
+		$data['title']='Buat Laporan';
+		$data['laporan'] = $this->Lapor_model->getLaporan();
+
+		$this->load->view('templates/header',$data);
+		$this->load->view('home/form', $data);
+		$this->load->view('templates/footer'); 
 	}
 }
