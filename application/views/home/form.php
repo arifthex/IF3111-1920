@@ -14,6 +14,7 @@
 		<br>
   		<input type="file" name="lampiran">
   		<div class="jarak">
+  			<a class="button" href="<?= base_url();?>home/index">Kembali</a> 
   			<input type="submit" name="kirim" value="Buat LAPOR!">
   		</div>
   		<hr>

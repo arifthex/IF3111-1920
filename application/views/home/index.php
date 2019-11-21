@@ -4,18 +4,35 @@
 			<input type="text" name="kata" style="height:2em; width: 70%" placeholder="Masukkan laporan yang ingin anda cari...">
 			<input type="submit" name="cari" value="Cari" style="height:3.15em; width:8%">
 		</form>
-		<a href="home/form">Buat Laporan/komentar <img height="20px" src="<?= base_url()?>asset/icon/tambah.png"></a>
+		<a href="<?= base_url();?>home/form">Buat Laporan/komentar <img height="20px" src="<?= base_url()?>asset/icon/tambah.png"></a>
 	</div>
 	<div id="konten">
-		<br>
+		<br><br>
 		<p>Laporan/Komentar Terakhir </p>
-		<br><hr><br>
-		<b>Anonim </b> <br><br>
-	 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		<br><hr>
+		
+			
+			<?php foreach ($laporan as $value): ?>
+			<div class="wrapper">
+				<div class="gambar">
+					<img height="50px" src="<?= base_url()?>asset/icon/user.png">
+				</div>
+				<b>
+				<?= $value['author']; ?> <br>
+					<span>Kategori : <?= $value['kategori']; ?></span>
+				</b>
+			</div>
+			<h1><?= $value['judul']; ?></h1>
+			<br>
+			<p style="text-align: justify;">
+			<?= $value['isi']; ?>
+			</p>
+			<br>
+			<?= $value['lampiran']; ?> (ini lampiran)
+			<span>
+			<p><?= $value['waktu']; ?> &nbsp <b>Lihat Selengkapnya ></b></p>
+			</span>
+			<hr>
+		<?php endforeach; ?>
 	</div> 
 </div>

@@ -18,7 +18,6 @@ class Home extends CI_Controller {
 	}
 	public function form() {
 		$data['title']='Buat Laporan';
-		$data['laporan'] = $this->Lapor_model->getLaporan();
 
 		$this->load->view('templates/header',$data);
 		$this->load->view('home/form', $data);

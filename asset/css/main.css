@@ -5,6 +5,7 @@
 }
 a{
 	text-decoration: none;
+	color:#f4f4f4;
 }
 /**/
 
@@ -16,9 +17,6 @@ a{
 		text-align:right;
 		padding: 0.5em 2em;
 	}
-		header a{
-			color:#f4f4f4;
-		}
 	/**/
 	/*Judul pada Class Title SIMPLE LAPOR*/
 	#head{
@@ -59,12 +57,12 @@ a{
 		}
 		/*AKHR BADAN*/
 	#konten{
-		padding: 0.5em 8em 1.5em 8em;
+		padding: 0em 8em 1.5em 8em;
 	}
 		#konten .textarea{
 			resize:none; 
 			width:98.5%; 
-			height:181px;
+			height:191px;
 			font-family: times new roman,sans-serif;
 			padding: 0.5em;
 		}
@@ -82,13 +80,42 @@ a{
 		#konten .jarak{
 			text-align: right;
 		}
+		.button{
+		    padding : 0.5em 0.6em 0.7em 0.6em;
+		    background-color: #C21111;
+		}
 		#konten input[type=submit]{;
 		    padding: 0.5em;
 		    background-color: #C21111;
-		    margin: 1em 0em;
-		    height: 40px;
+		    margin: 1em 0.5em;
+		    height: 38px;
 		    color: white;
 		}
+		/*Membuat CSS Untuk Kaerangka Profil*/
+		#konten .wrapper{
+			grid-template-columns: 7% 	auto;
+			display: grid;
+		}
+		/*Membuat CSS Untuk Author*/
+		#konten .wrapper b{
+			padding : 28px 0px 30px;
+			font-family: arial;
+		}
+		/*Membuat CSS Untuk kategori*/
+		#konten .wrapper span{
+			font-family: serif;
+			font-weight: lighter;
+			font-size: 11pt;
+		}
+		/*Membuat icon USER*/
+		#konten .gambar{
+			padding-left: 12px;
+			padding-top: 20px;
+		}
+	#konten span p{
+		padding: 20px 0px;
+		text-align: right;
+	}
 	 
 /*BAGUAB BAWAH*/
 footer{
