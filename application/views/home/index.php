@@ -1,4 +1,4 @@
-<div id="container">
+<!-- View pada Beranda Home Web  -->
 	<div id="badan">
 		<form action="" method="POST">
 			<input type="text" name="kata" style="height:2em; width: 70%" placeholder="Masukkan laporan yang ingin anda cari...">
@@ -10,8 +10,6 @@
 		<br><br>
 		<p>Laporan/Komentar Terakhir </p>
 		<br><hr>
-		
-			
 			<?php foreach ($laporan as $value): ?>
 			<div class="wrapper">
 				<div class="gambar">
@@ -35,4 +33,3 @@
 			<hr>
 		<?php endforeach; ?>
 	</div> 
-</div>

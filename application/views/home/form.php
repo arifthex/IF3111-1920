@@ -1,3 +1,4 @@
+<!-- View Untuk Form Inputan laporan baru -->
 <div id="konten">
 	<p>Buat laporan/komentar </p>
 	<br><hr><br>

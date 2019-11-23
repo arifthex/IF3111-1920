@@ -93,24 +93,25 @@ a{
 		}
 		/*Membuat CSS Untuk Kaerangka Profil*/
 		#konten .wrapper{
-			grid-template-columns: 7% 	auto;
-			display: grid;
+		    height: 6em;
 		}
 		/*Membuat CSS Untuk Author*/
 		#konten .wrapper b{
-			padding : 28px 0px 30px;
+			float: left; 
+			padding : 20px 0px 0px 15px;
 			font-family: arial;
 		}
 		/*Membuat CSS Untuk kategori*/
-		#konten .wrapper span{
+		#konten .wrapper b span{
 			font-family: serif;
 			font-weight: lighter;
 			font-size: 11pt;
 		}
 		/*Membuat icon USER*/
-		#konten .gambar{
-			padding-left: 12px;
-			padding-top: 20px;
+		#konten .wrapper .gambar{
+			float: left;
+			padding-top: 15px;
+
 		}
 	#konten span p{
 		padding: 20px 0px;
