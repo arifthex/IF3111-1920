@@ -42,6 +42,9 @@
 			</span>
 			<hr>
 		<?php endforeach; ?>
+		<?php if ($laporan == null): ?>
+			<br><center> Data tidak ditemukan </center>
+		<?php endif; ?>
 	</div>
 </div> 
 <script src="<?= base_url()?>asset/js/script.js"></script>
