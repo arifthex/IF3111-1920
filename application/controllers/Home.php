@@ -25,6 +25,18 @@ class Home extends CI_Controller {
 		$this->load->view('home/form', $data);
 		$this->load->view('templates/footer'); 
 	}
+	//Membuat controll  untuk pencarian berdasarlan judul dan isi laporan
+	public function search() {
+		$data['title']='Pencarian Data';
+		$data['name']='Hasil pencarian laporan';
+		$data['laporan'] = $this->Lapor_model->search();
+
+ 		$this->load->view('templates/header',$data);
+		$this->load->view('home/index', $data);
+		$this->load->view('templates/footer'); 
+	}
+		 
+
 	//Membuat controller untuk Fitur Detail laporan
 
 }
