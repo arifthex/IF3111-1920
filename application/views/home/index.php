@@ -1,4 +1,3 @@
-
 <!-- View pada Beranda Home Web  -->
 <div id="badan">
 	<form action="<?= base_url(); ?>Home/search" method="POST">
@@ -11,40 +10,35 @@
 <div id="konten">
 	<br><br>
 	<p>
-	<?php if (isset($name)) {
-		echo "$name";
-	} else {
-		echo "Laporan/Komentar Terakhir ";
-	}
-	?>
+		<?php if (isset($name)) {
+			echo "$name";
+		} else {
+			echo "Laporan/Komentar Terakhir ";
+		}
+		?>
 	</p>
 	<br><hr>
-	<div id="view">
-		<?php foreach ($laporan as $value): ?>
-			<div class="wrapper">
-				<div class="gambar">
-					<img height="50px" src="<?= base_url()?>asset/icon/user.png">
-				</div>
-				<b>
-					<?= $value['author']; ?> <br>
-					<span>Kategori : <?= $value['kategori']; ?></span>
-				</b>
+	<?php foreach ($laporan as $value): ?>
+		<div class="wrapper">
+			<div class="gambar">
+				<img height="50px" src="<?= base_url()?>asset/icon/user.png">
 			</div>
-			<h1><?= $value['judul']; ?></h1>
-			<br>
-			<p>
-				<?= $value['isi']; ?>
-			</p>
-			<br>
-			<?= $value['lampiran']; ?> (ini lampiran)
-			<span>
-				<p><?= $value['waktu']; ?> &nbsp <b>Lihat Selengkapnya ></b></p>
-			</span>
-			<hr>
-		<?php endforeach; ?>
-		<?php if ($laporan == null): ?>
-			<br><center> Data tidak ditemukan </center>
-		<?php endif; ?>
-	</div>
+			<b>
+				<?= $value['author']; ?> <br>
+				<span>Kategori : <?= $value['kategori']; ?></span>
+			</b>
+		</div>
+		<h1><?= $value['judul']; ?></h1>
+		<br>
+		<p><?= $value['isi']; ?></p>
+		<br>
+		<?= $value['lampiran']; ?> (ini lampiran)
+		<span>
+			<p><?= $value['waktu']; ?> &nbsp <b>Lihat Selengkapnya ></b></p>
+		</span>
+		<hr>
+	<?php endforeach; ?>
+	<?php if ($laporan == null): ?>
+		<br><center> Data tidak ditemukan </center>
+	<?php endif; ?>
 </div> 
-<script src="<?= base_url()?>asset/js/script.js"></script>
