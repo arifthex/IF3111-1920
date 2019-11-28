@@ -1,6 +1,6 @@
 <!-- View pada Beranda Home Web  -->
 <div id="badan">
-	<form action="<?= base_url(); ?>Home/search" method="POST">
+	<form action="<?= base_url(); ?>Search" method="POST">
 		<input type="text" placeholder="Masukkan laporan yang ingin anda cari..." 
 		name="keyword" id="keyword" autocomplete="off">
 		<input type="submit" name="cari" value="Cari" id="cari-data">
