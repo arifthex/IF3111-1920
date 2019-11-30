@@ -5,6 +5,7 @@
 
 	<form action="<?= base_url();?>CRUD/add" method="POST" onSubmit="validasi()" 
 	enctype="multipart/form-data" name="data">
+	<?= "<font color='red'><i>$error </i><br></font>"; ?>
 	<div class="textinput">
 		<input type="text" name="author" placeholder="Masukkan nama author"> <br><br>
 		<input type="text" name="judul" placeholder="Judul laporan anda"> <br> <br>
