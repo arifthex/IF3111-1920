@@ -10,17 +10,25 @@ class CRUD extends CI_Controller {
 	}
 	//Membuat controller Untuk Tambah data
 	public function add() {
+		date_default_timezone_set('Asia/jakarta'); //Menambah zona waktu asia jakarta
 		$data['title']='Buat Laporan';
 		$nama	= $this->input->post('author');
 		$judul	= $this->input->post('judul');
 		$isi	= $this->input->post('isi');
 		$aspek	= $this->input->post('aspek');
+		$waktu	= date('Y-m-d H:i:s'); //Format penulisan waktu sesuai database
+		$samaran = "Anonymous";
 
 		$config['upload_path']          = 'upload/file/';
-		$config['allowed_types']        = 'gif|jpg|png';
+		$config['allowed_types']        = 'doc|docx|xls|xlsx|ppt|pptx|pdf';
 		$config['max_size']             =  2048;
 
 		$this->load->library('upload', $config);
+
+		if ($nama == NULL) { //Ketika pelapor tidak memasukkan nama
+			$nama = $samaran;
+		}
+
 		//Ketika lampiran di upload
 		if (! $_FILES['lampiran']['error'] <> 4) {
 			$uploadData = $this->upload->data();
@@ -29,7 +37,8 @@ class CRUD extends CI_Controller {
 				'isi' 		=> $isi,
 				'judul' 	=> $judul,
 				'kategori' 	=> $aspek,
-				'lampiran' 	=> $uploadData['file_name'] 
+				'lampiran' 	=> $uploadData['file_name'],
+				'waktu' 	=> $waktu
 			);
 			$this->Input_model->tambah($data,'laporan');
 			redirect('home/index');
@@ -45,7 +54,8 @@ class CRUD extends CI_Controller {
 				'isi' 		=> $isi,
 				'judul' 	=> $judul,
 				'kategori' 	=> $aspek,
-				'lampiran' => $uploadData['file_name'] 
+				'lampiran' 	=> $uploadData['file_name'].
+				'waktu' 	=> $waktu
 			);
 			$this->Input_model->tambah($data,'laporan');
 			redirect('home/index');
