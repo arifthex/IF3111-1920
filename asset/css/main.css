@@ -79,8 +79,8 @@ a{
 		}
 		#konten .textinput input{
 			cursor: text;
-			width: 50%; 
-			height: 25px;
+			width:99.5%; 
+			height: 30px;
 			padding-left: 0.5em;
 		}
 		#konten .jarak{
