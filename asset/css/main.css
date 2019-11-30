@@ -77,6 +77,12 @@ a{
 			font-family: serif;
 			font-size: 14px;
 		}
+		#konten .textinput input{
+			cursor: text;
+			width: 50%; 
+			height: 25px;
+			padding-left: 0.5em;
+		}
 		#konten .jarak{
 			text-align: right;
 		}
