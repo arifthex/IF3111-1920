@@ -54,7 +54,7 @@ class CRUD extends CI_Controller {
 				'isi' 		=> $isi,
 				'judul' 	=> $judul,
 				'kategori' 	=> $aspek,
-				'lampiran' 	=> $uploadData['file_name'].
+				'lampiran' 	=> $uploadData['file_name'],
 				'waktu' 	=> $waktu
 			);
 			$this->Input_model->tambah($data,'laporan');
