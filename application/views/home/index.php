@@ -28,11 +28,13 @@
 				<span>Kategori : <?= $value['kategori']; ?></span>
 			</b>
 		</div>
-		<h1><?= $value['judul']; ?></h1>
+		<h2><?= $value['judul']; ?></h2>
 		<br>
 		<p><?= $value['isi']; ?></p>
 		<br>
-		<?= $value['lampiran']; ?> (ini lampiran)
+		<div class="lampiran">
+			<a href="<?= base_url();?>upload/file/<?= $value['lampiran']; ?>"><?= $value['lampiran']; ?></a>	
+		</div>
 		<span>
 			<p><?= $value['waktu']; ?> &nbsp <b>Lihat Selengkapnya ></b></p>
 		</span>
