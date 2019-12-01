@@ -10,22 +10,22 @@ a{
 /**/
 
 /*BAGIAN ATAS*/
-	/*BAGIAN HEADER BAR*/
-	header{
-		background-color: #C21111;
-		height: 1.5em;
-		text-align:right;
-		padding: 0.5em 2em;
-	}
-	/**/
-	/*Judul pada Class Title SIMPLE LAPOR*/
-	#head{
-		margin: 0em 0em 3em;
-		text-align: center;
-		font-family: sans-serif;
-		padding-top: 3em;
-	}
-	/**/
+/*BAGIAN HEADER BAR*/
+header{
+	background-color: #C21111;
+	height: 1.5em;
+	text-align:right;
+	padding: 0.5em 2em;
+}
+/**/
+/*Judul pada Class Title SIMPLE LAPOR*/
+#head{
+	margin: 0em 0em 3em;
+	text-align: center;
+	font-family: sans-serif;
+	padding-top: 3em;
+}
+/**/
 /**/
 
 /*BAGIAN ISI*/
@@ -45,6 +45,8 @@ a{
 			padding: 0.5em;
 			background-color:white;
 			transition: 0.3s all ease-out;
+			height:2em; 
+			width: 63%;
 		}
 		#badan input:hover{
 		    box-shadow: 0px 5px 8px 0px;
@@ -54,11 +56,23 @@ a{
 		}
 		#badan input[type=submit]{
 		    cursor: pointer;
+		    height:3.2em; 
+			width:7%;
 		}
 		/*AKHR BADAN*/
 	#konten{
-		padding: 0em 8em 1.5em 8em;
-	}
+		padding: 0em 12em 1.5em 12em;
+	}	
+		#konten .lampiran a{
+			background-color: #DDF4FE;
+			color: #0066FF;
+			font-style: italic;
+			font-weight: bold;
+		}
+		#konten p{
+			text-align: justify;
+			font-size: 14pt;
+		}
 		#konten .textarea{
 			resize:none; 
 			width:98.5%; 
@@ -66,7 +80,7 @@ a{
 			font-family: times new roman,sans-serif;
 			padding: 0.5em;
 		}
-		select{
+		#konten select{
 			margin: 1.5em 0em;
 			padding: 0.5em;
 			cursor: pointer;
@@ -83,10 +97,10 @@ a{
 			height: 30px;
 			padding-left: 0.5em;
 		}
-		#konten .jarak{
+		#konten .jarak {
 			text-align: right;
 		}
-		.button{
+		#konten .button{
 		    padding : 0.5em 0.6em 0.7em 0.6em;
 		    background-color: #C21111;
 		}
@@ -101,28 +115,31 @@ a{
 		#konten .wrapper{
 		    height: 6em;
 		}
-		/*Membuat CSS Untuk Author*/
-		#konten .wrapper b{
-			float: left; 
-			padding : 20px 0px 0px 15px;
-			font-family: arial;
+			/*Membuat CSS Untuk Author*/
+			#konten .wrapper b{
+				float: left; 
+				padding : 20px 0px 0px 15px;
+				font-family: arial;
+			}
+				/*Membuat CSS Untuk kategori*/
+				#konten .wrapper b span{
+					font-family: serif;
+					font-weight: lighter;
+					font-size: 11pt;
+				}
+			/*Membuat icon USER*/
+			#konten .wrapper .gambar{
+				float: left;
+				padding-top: 15px;
+			}
+		#konten span p{
+			padding: 20px 0px;
+			text-align: right;
 		}
-		/*Membuat CSS Untuk kategori*/
-		#konten .wrapper b span{
-			font-family: serif;
-			font-weight: lighter;
-			font-size: 11pt;
-		}
-		/*Membuat icon USER*/
-		#konten .wrapper .gambar{
-			float: left;
-			padding-top: 15px;
-
-		}
-	#konten span p{
-		padding: 20px 0px;
-		text-align: right;
-	}
+			#konten span p b{
+				padding: 20px 0px;
+				cursor: pointer;	
+			}
 	 
 /*BAGUAB BAWAH*/
 footer{

@@ -3,8 +3,8 @@ Spesifikasi WEB SIMPLE LAPOR
 	VIEW
 	- halaman utama menampilkan laporan terakhir 
 	- Laporan menampilkan baca selengkapnya jika isi terlalu panjang
-	- Pada Home, daftar Judul, Siapa yang bertanya, Isi pertanyaan singkat dan datetime terlihat
-	- Pada HOME, terlihat dapat mengedit maupun menghapus laporan
+	- Pada Home, daftar Judul, Siapa yang bertanya, Isi pertanyaan singkat(3 baris) dan datetime terlihat
+	- Pada Detail, terlihat dapat mengedit maupun menghapus laporan
 	- HOME,ISI,DETAIL
 	- Aspek yang dilaporkan (Dosen, Staff, Mahasiswa, Infrastruktur dan Pengajaran )
 
@@ -15,5 +15,16 @@ Spesifikasi WEB SIMPLE LAPOR
 	- Dapat melakukan search melalui isi laporan pelapor
 	- Dapat mencamtumkan file lampiran pada pelaporan 
 	  Data lampiran berupa gambar dan file berekstention `doc, docx, xls, xlsx, ppt, pptx, pdf'
-	- Validasi isi laporan menggunakan javascript dengan minimal 20 karakter
+	- Validasi isi laporan menggunakan javascript dengan minimal 20 kata
 
+ISSUE 
+BERANDA :
+	- READMORE
+
+DETAIL :
+	- KLIK DETAIL
+	- EDIT
+	- REMOVE
+
+INPUT LAPORAN :
+	- VALIDASI FILE DAN REDIRECT
