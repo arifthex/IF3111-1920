@@ -62,7 +62,13 @@ header{
 		/*AKHR BADAN*/
 	#konten{
 		padding: 0em 12em 1.5em 12em;
-	}
+	}	
+		#konten .lampiran a{
+			background-color: #DDF4FE;
+			color: #0066FF;
+			font-style: italic;
+			font-weight: bold;
+		}
 		#konten p{
 			text-align: justify;
 			font-size: 14pt;
@@ -91,7 +97,7 @@ header{
 			height: 30px;
 			padding-left: 0.5em;
 		}
-		#konten .jarak{
+		#konten .jarak {
 			text-align: right;
 		}
 		#konten .button{
