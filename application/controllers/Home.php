@@ -20,11 +20,12 @@ class Home extends CI_Controller {
 	//Membuat controller untuk Fitur Input Laporan
 	public function form() {
 		$data['title']='Buat Laporan';
-
-		$this->load->view('templates/header',$data);
-		$this->load->view('home/form', $data);
-		$this->load->view('templates/footer'); 
-	}
+		
+        //Memuat view
+        $this->load->view('templates/header',$data);
+        $this->load->view('home/form', array('error' => ' ' ));
+        $this->load->view('templates/footer'); 
+    }
 	//Membuat controller untuk Fitur Detail laporan
 
 }
