@@ -20,7 +20,9 @@
 					<span>Kategori : <?= $value['kategori']; ?></span>
 				</b>
 			</div>
-			<h1><?= $value['judul']; ?></h1>
+
+			<!-- <?php $id=$value['id']; ?> -->
+			<h1> <a href="<?= base_url()?>home/detail?id=$id"><?= $value['judul']; ?></a> </h1>
 			<br>
 			<p style="text-align: justify;">
 			<?= $value['isi']; ?>
