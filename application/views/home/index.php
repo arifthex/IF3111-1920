@@ -30,7 +30,17 @@
 		</div>
 		<h2><?= $value['judul']; ?></h2>
 		<br>
-		<p><?= $value['isi']; ?></p>
+		<p> <div id="readmore">
+			<?php 
+				$string 	= $value['isi'];
+				$karakter 	= strlen($string);
+				readmore($string,$karakter);
+			?>	
+			</div>
+			<div id="expand">
+				<?php expand($string); ?>
+			</div>
+		</p>
 		<br>
 		<div class="lampiran">
 			<a href="<?= base_url();?>upload/file/<?= $value['lampiran']; ?>"><?= $value['lampiran']; ?></a>	
