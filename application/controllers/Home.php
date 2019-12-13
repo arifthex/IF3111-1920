@@ -13,6 +13,19 @@ class Home extends CI_Controller {
 		$data['title']='SIMPLE LAPOR!';
 		$data['laporan'] = $this->Lapor_model->getLaporan();
 
+		function readmore($string,$karakter){
+			$more 	= substr($string, 0, 150);
+			if ($karakter < 151) {
+				echo "$string";
+			}
+			else {
+				echo "$more...<b>[Read More]</b>";
+			}
+		}
+		function expand($string){
+			echo "$string";
+		}
+
 		$this->load->view('templates/header',$data);
 		$this->load->view('home/index', $data);
 		$this->load->view('templates/footer');  
