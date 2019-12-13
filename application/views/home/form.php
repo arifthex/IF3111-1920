@@ -20,7 +20,7 @@
 		<option value="pengajaran">Pengajaran</option>
 	</select>
 	<br>
-	<input type="file" name="lampiran">
+	<input type="file" name="lampiran" id="file">
 	<div class="jarak">
 		<a class="button" href="<?= base_url();?>home/index">Kembali</a> 
 		<input type="submit" name="kirim" value="Buat LAPOR!">
