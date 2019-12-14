@@ -23,27 +23,40 @@
 			<div class="gambar">
 				<img height="50px" src="<?= base_url()?>asset/icon/user.png">
 			</div>
-			<b>
-				<?= $value['author']; ?> <br>
-				<span>
-          Kategori : <?= $value['kategori']; ?></span>
+			<b> 
+			<?= $value['author']; ?> <br>
+			<span> Kategori : <?= $value['kategori']; ?></span>
 			</b>
 		</div>
-		<p> <?= $value['isi']; ?> </p> 
+		<p>
+		<?php 
+			$more = $value['isi'];
+			$string = substr($more,0,350);
+			$hitung = strlen($string);
+			if ($hitung < 300 ) {
+				echo "$more";
+			} else {
+				echo "$string <b>  . . .[Read more]</b>";	
+			}
+			
+			
+		?>
+		</p>
 		<br><br><br>
-		<p><?= $value['isi']; ?></p>
-		<br>
 		<div class="lampiran">
 			Lampiran : 
-			<a href="<?= base_url();?>upload/file/<?= $value['lampiran']; ?>"><?= $value['lampiran']; ?></a>
+			<b><a href="<?= base_url();?>upload/file/<?= $value['lampiran']; ?>"><?= $value['lampiran']; ?></a></b>
 		</div>
-		<span>
-			<p>Waktu : <?= $value['waktu']; ?>&nbsp<b><a href="">Lihat selengkapnya ></a></b></p>
+		<?php $id = $value['ID']; ?>
+		<span>	
+			<p>Waktu : <?= $value['waktu']; ?>&nbsp<b> 
+			<?php echo "<a href='http://localhost/IF3111-1920/home/detail?detail=$id'>Lihat selengkapnya ></a>";?>
+			</b></p>
 		</span>
 		<hr>
 		
 	<?php endforeach; ?>
 	<?php if ($laporan == null): ?>
-		<br><center> Data tidak ditemukan </center>
+		<br><center><br><br> Tidak Ada Data <br><br></center>
 	<?php endif; ?>
 </div> 
