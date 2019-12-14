@@ -8,7 +8,7 @@ class Search extends CI_Controller {
 		//Model di panggil di awal sebelum masuk ke fungsi
 		$this->load->model('Lapor_model');
 	}
-	//Membuat controll  untuk pencarian berdasarlan judul dan isi laporan
+	//Membuat controll  untuk pencarian berdasarlan judul,Kategori dan isi laporan
 	public function index() {
 		$data['title']='Pencarian Data';
 		$data['name']='Hasil pencarian laporan';

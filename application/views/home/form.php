@@ -8,7 +8,6 @@
 	<?= "<font color='red'><i>$error </i><br></font>"; ?>
 	<div class="textinput">
 		<input type="text" name="author" placeholder="Masukkan nama author dan kosongkan jika ingin disamarkan..."> <br><br>
-		<input type="text" name="judul" placeholder="Judul laporan anda..."> <br> <br>
 	</div>
 	<textarea placeholder="Ketik laporan/komentar anda..." class="textarea" name="isi"></textarea>
 	<select name="aspek">
@@ -20,7 +19,7 @@
 		<option value="pengajaran">Pengajaran</option>
 	</select>
 	<br>
-	<input type="file" name="lampiran">
+	<input type="file" name="lampiran" id="file">
 	<div class="jarak">
 		<a class="button" href="<?= base_url();?>home/index">Kembali</a> 
 		<input type="submit" name="kirim" value="Buat LAPOR!">
