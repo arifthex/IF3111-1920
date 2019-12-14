@@ -30,6 +30,7 @@ class Home extends CI_Controller {
 	public function detail() {
 		$data['title']='Detail Laporan';
 		$data['laporan'] = $this->Lapor_model->getLaporan();
+		$id = $_GET["id"];
 
 		$this->load->view('templates/header',$data);
 		$this->load->view('home/detail', $data);

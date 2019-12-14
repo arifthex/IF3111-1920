@@ -12,7 +12,8 @@
 		<span>Lampiran : <?= $value['lampiran']; ?></span>
 		<br>
 		<p> Waktu: <?= $value['waktu']; ?> Aspek: <?= $value['kategori']; ?> 
-		<a href="<?= base_url();?>home/detail">Hapus Laporan/komentar<img height="20px" src="<?= base_url()?>asset/icon/silang.png"></a></p>
+		<a href="<?= base_url();?>home/detail">Hapus Laporan</a></p>
+		<a href="<?= base_url();?>home/ubah">Ubah Laporan</a></p>
 		<br><hr>
 	<?php endforeach; ?>
 </div>
