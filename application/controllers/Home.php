@@ -27,5 +27,13 @@ class Home extends CI_Controller {
 	    $this->load->view('templates/footer'); 
 	    }
 	//Membuat controller untuk Fitur Detail laporan
+	public function detail() {
+		$data['title']='Detail Laporan';
+		$data['laporan'] = $this->Lapor_model->getLaporan();
+		$id = $_GET["id"];
 
+		$this->load->view('templates/header',$data);
+		$this->load->view('home/detail', $data);
+		$this->load->view('templates/footer');
+	}
 }

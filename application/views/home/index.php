@@ -25,11 +25,13 @@
 			</div>
 			<b>
 				<?= $value['author']; ?> <br>
-				<span>Kategori : <?= $value['kategori']; ?></span>
+				<span>
+          Kategori : <?= $value['kategori']; ?></span>
 			</b>
 		</div>
-		<p> <?= $value['isi']; ?> </p> 
-		<br><br><br>
+			<br>
+		<p><?= $value['isi']; ?></p>
+		<br>
 		<div class="lampiran">
 			Lampiran : 
 			<a href="<?= base_url();?>upload/file/<?= $value['lampiran']; ?>"><?= $value['lampiran']; ?></a>
