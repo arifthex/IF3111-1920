@@ -61,6 +61,7 @@ class CRUD extends CI_Controller {
 			redirect('home/index');
 		}
 	}
-
-
+	public function update(){
+		
+	}
 }
