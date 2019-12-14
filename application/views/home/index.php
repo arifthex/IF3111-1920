@@ -23,8 +23,12 @@
 			<div class="gambar">
 				<img height="50px" src="<?= base_url()?>asset/icon/user.png">
 			</div>
-			<!-- <?php $id=$value['id']; ?> -->
-			<h1> <a href="<?= base_url()?>home/detail?id=$id"><?= $value['judul']; ?></a> </h1>
+			<b>
+				<?= $value['author']; ?> <br>
+				<span>Kategori : <?= $value['kategori']; ?></span>
+			</b>
+		</div>
+		<h1> <a href="<?= base_url()?>home/detail?id=$id"><?= $value['judul']; ?></a> </h1>
 			<br>
 			<p style="text-align: justify;">
 			<?= $value['isi']; ?>
@@ -32,17 +36,6 @@
 			<br>
 			<?= $value['lampiran']; ?> (ini lampiran)
 			<span>
-			<b>
-				<?= $value['author']; ?> <br>
-				<span>Kategori : <?= $value['kategori']; ?></span>
-			</b>
-		</div>
-		<h1><?= $value['judul']; ?></h1>
-		<br>
-		<p><?= $value['isi']; ?></p>
-		<br>
-		<?= $value['lampiran']; ?> (ini lampiran)
-		<span>
 			<p><?= $value['waktu']; ?> &nbsp <b>Lihat Selengkapnya ></b></p>
 		</span>
 		<hr>
