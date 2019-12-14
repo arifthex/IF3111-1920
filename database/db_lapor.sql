@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 21 Nov 2019 pada 17.35
+-- Waktu pembuatan: 14 Des 2019 pada 17.17
 -- Versi server: 10.1.35-MariaDB
 -- Versi PHP: 7.2.9
 
@@ -31,8 +31,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `laporan` (
   `ID` int(20) NOT NULL,
   `author` varchar(35) NOT NULL,
-  `isi` varchar(512) NOT NULL,
-  `judul` varchar(50) NOT NULL,
+  `isi` varchar(10240) NOT NULL,
   `kategori` varchar(20) NOT NULL,
   `waktu` datetime NOT NULL,
   `lampiran` varchar(128) NOT NULL
@@ -42,8 +41,10 @@ CREATE TABLE `laporan` (
 -- Dumping data untuk tabel `laporan`
 --
 
-INSERT INTO `laporan` (`ID`, `author`, `isi`, `judul`, `kategori`, `waktu`, `lampiran`) VALUES
-(1, 'ARIF WICAKSONO', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\r\n	 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n	 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n	 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\r\n	 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\r\n	 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'Prasarana Gedung Serba Guna', 'Infrastruktur', '2019-11-01 05:14:00', 'user.img');
+INSERT INTO `laporan` (`ID`, `author`, `isi`, `kategori`, `waktu`, `lampiran`) VALUES
+(6, 'Proggramer', 'Pada awalnya PHP merupakan singkatan dari Personal Home Page. Sesuai dengan namanya, PHP digunakan untuk membuat website pribadi. Dalam beberapa tahun perkembangannya.', 'staff', '2019-12-14 21:50:53', 'KONSEP_MOL_DAN_PERHITUNGAN_KIMIA_istiistiqomah085.pdf'),
+(7, 'Wixsoon', 'Vukan Kutacane adalah ibu kota Kabupaten Aceh Tenggara, Provinsi Aceh, Indonesia. Kutacane merupakan pintu masuk ke Taman Nasional Gunung Leuser dari wilayah Aceh, dapat dicapai lebih kurang 6-8 jam lewat darat melalui Kabupaten Karo dari Medan, Sumatra Utara. 	', 'mahasiswa', '2019-12-14 23:15:19', 'uts2_mtk_20162.pdf'),
+(8, 'Anonymous', 'Institut Teknologi Sumatera (disingkat ITERA) adalah sebuah perguruan tinggi negeri yang terdapat di Provinsi Lampung. Lokasinya di antara wilayah Kabupaten Lampung Selatan dengan Kota Bandar Lampung. ITERA didirikan berdasarkan Peraturan Presiden Nomor 124 Tahun 2014 tentang Pendirian Institut Teknologi Sumatra (Lembaran Negara Republik Indonesia Tahun 2014 Nomor 253) yang ditetapkan Presiden Republik Indonesia Dr. H. Susilo Bambang Yudhoyono pada tanggal 6 Oktober 2014 dan diundangkan tanggal 9 Oktober 2014. Walaupun peresmiannya dilaksanakan pada tahun 2014, tetapi Itera sudah memulai kegiatan akademik dengan menerima mahasiswa baru sejak tahun 2012-2013. Selain ITB dan ITS, dengan dibukanya ITERA dan Institut Teknologi Kalimantan, kini pemerintah Indonesia memiliki empat institut teknologi. ', 'infrastruktur', '2019-12-14 23:16:21', 'KONSEP_MOL_DAN_PERHITUNGAN_KIMIA_istiistiqomah0852.pdf');
 
 --
 -- Indexes for dumped tables
@@ -63,7 +64,7 @@ ALTER TABLE `laporan`
 -- AUTO_INCREMENT untuk tabel `laporan`
 --
 ALTER TABLE `laporan`
-  MODIFY `ID` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `ID` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
