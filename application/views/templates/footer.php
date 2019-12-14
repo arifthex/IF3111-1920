@@ -1,6 +1,7 @@
-		<footer>						
-				Copyright &copy; SIMPLE LAPOR 2019 		
-		</footer>
+	<br><br>					
+	<img class="footer" src="<?php echo base_url(); ?>asset/icon/menu.png">
+	<img class="footer" src="<?php echo base_url(); ?>asset/icon/menu.png">
+	<br>
 </div>
 </body>
 </html>
