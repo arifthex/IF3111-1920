@@ -25,17 +25,17 @@
 			</div>
 			<b>
 				<?= $value['author']; ?> <br>
-				<span>Kategori : <?= $value['kategori']; ?></span>
+				<span>
+          Kategori : <?= $value['kategori']; ?></span>
 			</b>
 		</div>
-		<h1> <a href="<?= base_url()?>home/detail?id=$id"><?= $value['judul']; ?></a> </h1>
 			<br>
-			<p style="text-align: justify;">
-			<?= $value['isi']; ?>
-			</p>
-			<br>
-			<?= $value['lampiran']; ?> (ini lampiran)
-			<span>
+		<p><?= $value['isi']; ?></p>
+		<br>
+		<div class="lampiran">
+			<a href="<?= base_url();?>upload/file/<?= $value['lampiran']; ?>"><?= $value['lampiran']; ?></a>	
+		</div>
+		<span>
 			<p><?= $value['waktu']; ?> &nbsp <b>Lihat Selengkapnya ></b></p>
 		</span>
 		<hr>

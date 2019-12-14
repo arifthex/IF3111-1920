@@ -11,8 +11,7 @@ class Lapor_model extends CI_Model{
 	public function search(){  
 		$key = $this->input->post('keyword');
 
-		$this->db->like('judul',$key);
-		$this->db->or_like('isi',$key);
+		$this->db->like('isi',$key);
 		$this->db->or_like('kategori',$key);
 		$this->db->order_by('waktu', 'DESC');
 		$data = $this->db->get('laporan');

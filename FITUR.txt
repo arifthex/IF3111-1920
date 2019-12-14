@@ -17,3 +17,14 @@ Spesifikasi WEB SIMPLE LAPOR
 	  Data lampiran berupa gambar dan file berekstention `doc, docx, xls, xlsx, ppt, pptx, pdf'
 	- Validasi isi laporan menggunakan javascript dengan minimal 20 kata
 
+ISSUE 
+BERANDA :
+	- READMORE
+
+DETAIL :
+	- KLIK DETAIL
+	- EDIT
+	- REMOVE
+
+INPUT LAPORAN :
+	- VALIDASI FILE DAN REDIRECT
