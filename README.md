@@ -9,7 +9,8 @@ di program studi teknik informatika ITERA.
 **Luangkan waktu untuk membaca spesifikasi ini sampai selesai.** :kissing_heart:
 
 ### Anggota Tim :cyclone:
-Project dikerjakan secara **berkelompok** dengan maksimal jumlah anggota adalah 2-3 orang mahasiswa.
+1. 14116033 Arif Wicaksono
+2. 14116172 Mu'minatul Faizah
 
 ### Petunjuk Pengerjaan :umbrella:
 1. Fork pada repository ini dengan akun github anda.
@@ -101,14 +102,33 @@ Webisite ini menggunakan Framework CodeIgniter 3.1.11 dan menggunakan database M
 1. Instalasi Website
    - Download terlebih dahulu repository ini melalui branch master
    - import db_lapor.sql ke database anda
-   -
+   - aktifkan apache dan mysql pada web server anda
+   - web server dapat menggunakan XAMPP
 2. Validasi Inputan 
 	Hal ini akan menejelaskan inputan seperti apa yang di terima oleh sistem
 	- Sistem menerima minimal 20 kata pada isi laporan/komentar
-	-
+	- Menerima inputan file dokumen sebagai lampiran dengan extensi `doc, docx, xls, xlsx, ppt, pptx, pdf'
+	- Upload file maksimal 2MB
 3. Petunjuk Penggunaan
-	-
-
+	+ Melakukan pencarian laporan
+	- Masukkan keyword pencarian pada search bar untuk mencari isi laporan yang relevan
+	- Pada halaman utama, web hanya menampilkan 350 karakter.
+	
+	+ Buat Laporan baru
+	- Klik Buat laporan di bawah search bar pencarian
+	- isi setiap field yang telah diberikan
+	- User dapat mengosongkan pada field input nama untuk penyamaran pelapor
+	- Perhatikan validasi inputan untuk membuat laporan baru
+	
+	+ Update dan hapus laporan
+	- kilk baca selengkapnya pada laporan yang ingin di hapus atau update
+	- Kemudian pilih Hapus untuk menghapus laporan, dan update untuk memperbaharui laporan
+	
+	+Download file laporan
+	- User dapat mengunduh file lampiran dari para pelapor
+	- Klik pada nama file pada halaman utama
+	- Atau bisa klik pada gambar seperti surat pada halaman baca selengkapnya
+	
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
 - CSS: margin, padding, header tag, font-size, text-align, float, clear, border, color, div, span, placeholder, 
