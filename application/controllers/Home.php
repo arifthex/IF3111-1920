@@ -13,6 +13,16 @@ class Home extends CI_Controller {
 		$data['title']='SIMPLE LAPOR!';
 		$data['laporan'] = $this->Lapor_model->getLaporan();
 
+		function readmore($string) {
+			$more = substr($string, 0,10);
+			$karakter = strlen($string);
+			if ($karakter < 301) {
+				echo "$more ...[Read More]";
+			} else {
+				echo "$string";
+			}
+		}
+
 		$this->load->view('templates/header',$data);
 		$this->load->view('home/index', $data);
 		$this->load->view('templates/footer');  
@@ -24,15 +34,20 @@ class Home extends CI_Controller {
 	    //Memuat view
 	    $this->load->view('templates/header',$data);
 	    $this->load->view('home/form', array('error' => ' ' ));
-	    $this->load->view('templates/footer'); 
 	    }
 	//Membuat controller untuk Fitur Detail laporan
 	public function detail() {
 		$data['title']='Detail Laporan';
-		$data['laporan'] = $this->Lapor_model->getLaporan();
+		$data['detail'] = $this->Lapor_model->detail();
 
 		$this->load->view('templates/header',$data);
 		$this->load->view('home/detail', $data);
-		$this->load->view('templates/footer');
+	}
+	public function ubah() {
+		$data['title']='Detail Laporan';
+		$data['ubah'] = $this->Lapor_model->ubah();
+
+		$this->load->view('templates/header',$data);
+		$this->load->view('home/ubah', $data);
 	}
 }
