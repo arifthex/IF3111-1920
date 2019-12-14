@@ -5,7 +5,7 @@
 }
 a{
 	text-decoration: none;
-	color:#f4f4f4;
+	color:black;
 }
 /**/
 
@@ -32,109 +32,111 @@ header{
 #container{
 	background-color:#FBF8F8;
 }	
-	/*BADAN*/
-	#badan {
-		text-align: center;
-		line-height: 2.5em;
-	}
-		#badan a{
-			color: #6A0606;
-		}
-		#badan input{
-			border: 1px solid grey;
-			padding: 0.5em;
-			background-color:white;
-			transition: 0.3s all ease-out;
-			height:2em; 
-			width: 63%;
-		}
-		#badan input:hover{
-		    box-shadow: 0px 5px 8px 0px;
-		    color: #562121;
-		    transition: 0.3s all ease-out;
-		    background:#EEEEEE;
-		}
-		#badan input[type=submit]{
-		    cursor: pointer;
-		    height:3.2em; 
-			width:7%;
-		}
-		/*AKHR BADAN*/
-	#konten{
-		padding: 0em 12em 1.5em 12em;
-	}
-		#konten p{
-			text-align: justify;
-			font-size: 14pt;
-		}
-		#konten .textarea{
-			resize:none; 
-			width:98.5%; 
-			height:191px;
-			font-family: times new roman,sans-serif;
-			padding: 0.5em;
-		}
-		#konten select{
-			margin: 1.5em 0em;
-			padding: 0.5em;
-			cursor: pointer;
-		}
-		/*PERBAIKAN*/
-		#konten input{
-		    cursor: pointer;
-			font-family: serif;
-			font-size: 14px;
-		}
-		#konten .textinput input{
-			cursor: text;
-			width:99.5%; 
-			height: 30px;
-			padding-left: 0.5em;
-		}
-		#konten .jarak{
-			text-align: right;
-		}
-		#konten .button{
-		    padding : 0.5em 0.6em 0.7em 0.6em;
-		    background-color: #C21111;
-		}
-		#konten input[type=submit]{;
-		    padding: 0.5em;
-		    background-color: #C21111;
-		    margin: 1em 0.5em;
-		    height: 38px;
-		    color: white;
-		}
-		/*Membuat CSS Untuk Kaerangka Profil*/
-		#konten .wrapper{
-		    height: 6em;
-		}
-			/*Membuat CSS Untuk Author*/
-			#konten .wrapper b{
-				float: left; 
-				padding : 20px 0px 0px 15px;
-				font-family: arial;
-			}
-				/*Membuat CSS Untuk kategori*/
-				#konten .wrapper b span{
-					font-family: serif;
-					font-weight: lighter;
-					font-size: 11pt;
-				}
-			/*Membuat icon USER*/
-			#konten .wrapper .gambar{
-				float: left;
-				padding-top: 15px;
-			}
-		#konten span p{
-			padding: 20px 0px;
-			text-align: right;
-		}
-			#konten span p b{
-				padding: 20px 0px;
-				cursor: pointer;	
-			}
-	 
+/*BADAN*/
+#badan {
+	text-align: center;
+	line-height: 2.5em;
+}
+#badan a{
+	color: #6A0606;
+}
+#badan input{
+	border: 1px solid grey;
+	padding: 1em;
+	background-color:white;
+	transition: 0.3s all ease-out;
+	height:2em; 
+	width: 60%;
+}
+#badan input:hover{
+	box-shadow: 0px 5px 8px 0px;
+	color: #562121;
+	transition: 0.3s all ease-out;
+	background:#EEEEEE;
+}
+#badan input[type=submit]{
+	cursor: pointer;
+	height:4.2em; 
+	width:8%;
+}
+/*AKHR BADAN*/
+#konten{
+	padding: 0em 12em 1.5em 12em;
+	font-family: Arial, Helvetica, sans-serif;
+}	
+#konten p{
+	text-align: justify;
+	margin-bottom: 5px;
+	font-size: 12pt;
+}
+#konten .textarea{
+	resize:none; 
+	width:98.5%; 
+	height:191px;
+	font-family: times new roman,sans-serif;
+	padding: 0.5em;
+}
+#konten select{
+	margin: 1.5em 0em;
+	padding: 0.5em;
+	cursor: pointer;
+}
+/*PERBAIKAN*/
+#konten input{
+	cursor: pointer;
+	font-family: serif;
+	font-size: 14px;
+}
+#konten .textinput input{
+	cursor: text;
+	width:99.5%; 
+	height: 30px;
+	padding-left: 0.5em;
+}
+#konten .jarak {
+	text-align: right;
+}
+#konten .button{
+	padding : 0.5em 0.6em 0.7em 0.6em;
+	background-color: #C21111;
+}
+#konten input[type=submit]{;
+	padding: 0.5em;
+	background-color: #C21111;
+	margin: 1em 0.5em;
+	height: 38px;
+	color: white;
+}
+/*Membuat CSS Untuk Kaerangka Profil*/
+#konten .wrapper{
+	height: 6em;
+}
+/*Membuat CSS Untuk Author*/
+#konten .wrapper b{
+	float: left; 
+	padding : 20px 0px 0px 15px;
+	font-family: arial;
+}
+/*Membuat CSS Untuk kategori*/
+#konten .wrapper b span{
+	font-family: serif;
+	font-weight: lighter;
+}
+/*Membuat icon USER*/
+#konten .wrapper .gambar{
+	float: left;
+	padding-top: 15px;
+}
+#konten .lampiran{
+	font-size: 14px;
+	float: left;
+	clear: both;
+}
+#konten span p{
+	text-align: right;
+	font-size: 14px;
+}
+
 /*BAGUAB BAWAH*/
 footer{
 	background-color: #C21111;
