@@ -1,8 +1,7 @@
-function konfirmasi (id) {
-	str="Apakah anda yakin ingin menghapus laporan "+id+"?";
+function konfirmasi (direct) {
+	str="Apakah yakin ingin menghapus ?";
 	if(confirm(str)){
-		return true;
-	}else{
-		return false;
+		document.location = direct;
 	}
 }
+

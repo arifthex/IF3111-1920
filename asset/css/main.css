@@ -17,12 +17,15 @@ header{
 	text-align:right;
 	padding: 0.5em 2em;
 }
+header a {
+	color: white;
+}
 /**/
 /*Judul pada Class Title SIMPLE LAPOR*/
 #head{
 	margin: 0em 0em 3em;
 	text-align: center;
-	font-family: sans-serif;
+	font-family: arial;
 	padding-top: 3em;
 }
 /**/
@@ -46,7 +49,8 @@ header{
 	background-color:white;
 	transition: 0.3s all ease-out;
 	height:2em; 
-	width: 60%;
+	width: 61%;
+	margin-bottom: 5px;
 }
 #badan input:hover{
 	box-shadow: 0px 5px 8px 0px;
@@ -128,20 +132,25 @@ header{
 	padding-top: 15px;
 }
 #konten .lampiran{
-	font-size: 14px;
+	font-size: 13px;
 	float: left;
 	clear: both;
 }
 #konten span p{
 	text-align: right;
-	font-size: 14px;
+	font-size: 13px;
+}
+#konten .jarak a{
+	color: white;
+	font-family: times new roman;
 }
 
 /*BAGUAB BAWAH*/
-footer{
-	background-color: #C21111;
-	color:#E2E1E1;
-	line-height:2.4em;
-	text-align:center;
+.footer{
+	padding: 15px; 
+    width  : 20px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 /*
